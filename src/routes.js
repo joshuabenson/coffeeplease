@@ -4,8 +4,6 @@ import fetch from './core/fetch';
 import App from './components/App';
 import ContentPage from './components/ContentPage';
 import ContactPage from './components/ContactPage';
-import LoginPage from './components/LoginPage';
-import RegisterPage from './components/RegisterPage';
 import NotFoundPage from './components/NotFoundPage';
 import ErrorPage from './components/ErrorPage';
 
@@ -16,10 +14,6 @@ const router = new Router(on => {
   });
 
   on('/contact', async () => <ContactPage />);
-
-  on('/login', async () => <LoginPage />);
-
-  on('/register', async () => <RegisterPage />);
 
   on('*', async (state) => {
     const response = await fetch(`/api/content?path=${state.path}`);

@@ -16,10 +16,6 @@ class Navigation extends Component {
         <Link className={s.link} to="/about">About</Link>
         <span className={s.spacer}> | </span>
         <Link className={s.link} to="/contact">Contact</Link>
-        <span className={s.spacer}> | </span>
-        <Link className={s.link} to="/login">Log in</Link>
-        <span className={s.spacer}> | </span>
-        <Link className={cx(s.link, s.highlight)} to="/register">Sign up</Link>
       </div>
     );
   }
