@@ -4,7 +4,6 @@ import s from './Footer.scss';
 import Link from '../Link';
 
 class Footer extends Component {
-
   render() {
     return (
       <div className={s.root}>
@@ -16,7 +15,6 @@ class Footer extends Component {
       </div>
     );
   }
-
 }
 
 export default withStyles(Footer, s);

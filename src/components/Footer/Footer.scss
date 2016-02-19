@@ -3,6 +3,9 @@
 .root {
   background: #808c99;
   color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .container {
@@ -41,3 +44,4 @@
 .link:hover {
   color: rgba(255, 255, 255, 1);
 }
+
